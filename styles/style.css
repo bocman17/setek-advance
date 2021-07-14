@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/***** reusable *****/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.heading-main h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.heading-main h2:after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 2px solid rgb(30, 31, 30);
+  margin: 20px auto; 
+}
+
+/****** header ******/
+
+header {
+  background: linear-gradient(rgba(49, 49, 49, 0.8), rgba(32, 32, 32, 0.5)),
+    url("../images/steak.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#logo img {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 2%;
+}
+
+nav ul {
+  float: right;
+  margin-top: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #fff;
+  margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  border-bottom: solid 2px rgb(30, 31, 30);
+  transition: border-bottom 2.5s;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons h1 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  word-spacing: 3px;
+}
+
+.btn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  border: solid 3px rgb(30, 31, 30);
+  border-radius: 10px;
+  margin-top: 7px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.btn-full {
+  background: rgb(30, 31, 30);
+}
+
+.btn-empty {
+  margin-left: 10px;
+  background-color: rgb(30, 31, 30);
+}
+
+.btn:link,
+.btn:visited {
+  background: rgb(30, 31, 30);
+}
+
+.btn:hover,
+.btn:active {
+  transition: background 2.5s;
+  background-color: transparent;
+}
+
+/***** About us *****/
+
+.pizza-example img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 6px 10px #000;
+}
+
+/***** Our pizza *****/
+
+.pizza-info img {
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 10px #000;
+}
+
+.text-pizza {
+  margin-bottom: 20px;
+}
+
+.text-pizza div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(30, 31, 30);
+  text-align: center;
+  border-radius: 50%;
+  padding: 12.25px;
+  float: left;
+}
+
+.text-pizza p {
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+/***** Reference *****/
+
+.reference {
+  background: linear-gradient(rgba(49, 49, 49, 0.8), rgba(32, 32, 32, 0.5)),
+    url("../images/steak.jpg");
+  background-attachment: fixed;
+}
+
+.reference h2 {
+  color: #fff;
+  padding-top: 40px;
+}
+
+.reference h2:after {
+  border-bottom: 2px solid white;
+}
+
+.one-reference {
+  color: white;
+  font-size: 20px;
+}
+
+.one-reference p {
+  font-style: italic;
+}
+
+.person img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.person {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.person p {
+  padding: 13px;
+  margin-left: 60px;
+  font-style: normal;
+}
+
+/*****Photo-gallery *****/
+
+.photo-segment li {
+  list-style-type: none;
+  /* background: #000; */
+  overflow: hidden;
+  height: 300px;
+}
+
+.photo-segment img {
+  width: 100%;
+  height: 300px;
+  /* opacity: 0.5; */
+  transform: scale(1.15);
+}
+
+/* .photo-segment img:hover {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+} */
+
+/***** Form *****/
+
+.contact-form {
+  max-width: 700px;
+  text-align: center;
+}
+
+.contact-form input {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  outline: none;
+}
+
+.contact-form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.contact-form textarea {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-bottom: 40px;
+  background-color: indigo;
+  color: #fff;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: aquamarine;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/***** Stop floating *****/
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/***** Footer *****/
+
+.footer-page {
+  background-color: #333333;
+  color: white;
+}
+
+.social {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.social p {
+  display: inline;
+  margin-right: 20px;
+}
+
+.social p a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.social p a:link,
+.social p a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+  color: rgb(113, 225, 233);
+}
+
+.foot-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
