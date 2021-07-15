@@ -9,35 +9,44 @@
     <link rel="stylesheet" href="adress/grid.css">
     <link rel="icon" type="image/png" href="images/icons8-globe-earth-24.png">
     <link rel="stylesheet" href="/styles/quaries.css">
-    <script src="lightbox-plus-jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    
+
     <title>Document</title>
 </head>
 <body>
     <header>
+        <div class="navBar-bg">
         <div class="navBar row">
-            <div id="logo">
+            <!-- <div id="logo">
                 <img src="images/burger.png" alt="">
-            </div>
-            <nav>
+            </div> -->
+            <nav class="row">
                 <ul>
-                    <li><a href="">Jedna</a></li>
-                    <li><a href="">Dva</a></li>
-                    <li><a href="">Tři</a></li>
-                    <li><a href="">Čtyři</a></li>
-                    <li><a href="">Pět</a></li>
+                    <li><a class="nav-link scroll" href="#top" >Naše Pizza</a></li>
+                    <li><a class="nav-link scroll" href="#section2">O naší pizze</a></li>
+                    <li><a class="nav-link scroll" href="#section3">Reference</a></li>
+                    <li><a class="nav-link scroll" href="#section4">Fotogalerie</a></li>
+                    <li><a class="nav-link scroll" href="#section5">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
+    </div>
         <div class="buttons">
             <h1>Save the plants, eat meat.</h1>
-            <a href="#" class="btn btn-full">Meat</a>
-            <a href="#" class="btn btn-empty">Plants</a>
+            <a href="#top" class="scroll btn btn-full">Meat</a>
+            <a href="#section5" class="scroll btn btn-empty">Plants</a>
         </div>
     </header>
 
     <main>
-        <section class="aboutUs row">
-            <div class="heading-main">
+        <section class="aboutUs row" >
+            <div class="heading-main" id="top">
                 <h2>Naše maso</h2>
             </div>
 
@@ -51,7 +60,7 @@
             </div>
         </section>
         <section class="our-pizza row">
-            <div class="heading-main">
+            <div class="heading-main" id="section2">
                 <h2>O naší pizze</h2>
             </div>
 
@@ -83,7 +92,7 @@
         </section>
 
         <section class="reference">
-            <div class="heading-main">
+            <div class="heading-main" id="section3">
                 <h2>Co o nás řekli naší zákazníci </h2>
             </div>
             
@@ -113,7 +122,7 @@
         </section>
 
         <section class="photo-gallery">
-            <div class="heading-main">
+            <div class="heading-main" id="section4">
                 <h2>Fotky jídel</h2>
             </div>
 
@@ -133,7 +142,7 @@
             </div>
 
         </section>
-        <div class="heading-main">
+        <div class="heading-main" id="section5">
             <h2>Zeptejte se nás na cokoliv</h2>
         </div>
 
